@@ -259,7 +259,7 @@ body {
 }
 .sidenav {
   top: 0;
-  left: -240px;
+  left: 0;
   z-index: 100;
   width: 290px;
   height: 100%;
@@ -364,6 +364,17 @@ body {
 }
 .sidenav li li a:hover:before {
   display: none;
+}
+@media (max-width: 1217px) {
+  .sidenav {
+    left: -240px;
+  }
+  .sidenav .sidenav_close {
+    display: block;
+  }
+  .sidenav .sidenav_open {
+    display: none;
+  }
 }
 .basket_line {
   height: 37px;
@@ -756,7 +767,7 @@ nav ul {
   padding: 0;
   list-style: none;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1217px) {
   .container {
     width: 945px;
     padding-left: 60px;

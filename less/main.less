@@ -234,7 +234,7 @@ body {
 
 .sidenav {
 	top: 0;
-	left: -240px;
+	left: 0;
 	z-index: 100;
 	width: 290px;
 	height: 100%;
@@ -351,6 +351,18 @@ body {
 					}
 				}
 			}
+		}
+	}
+
+	@media  (max-width: 1217px) {
+		left: -240px;
+
+		.sidenav_close {
+			display: block;
+		}
+
+		.sidenav_open {
+			display: none;
 		}
 	}
 }
@@ -830,7 +842,7 @@ nav ul {
 }
 
 
-@media  (max-width: 1200px) {
+@media  (max-width: 1217px) {
 
 	.container {
 		width: 945px;
