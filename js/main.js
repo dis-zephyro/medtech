@@ -43,6 +43,7 @@ $(document).ready(function() {
 
 $(".sidenav_open").click(function(){
     $(".sidenav").animate({left:'0'},500);
+    $(".wrapper").animate({left:'0'},500);
     $(".sidenav_open").hide();
     $(".sidenav_close").show();
 });
@@ -50,6 +51,7 @@ $(".sidenav_open").click(function(){
 
 $(".sidenav_close").click(function(){
     $(".sidenav").animate({left:'-240'},500);
+    $(".wrapper").animate({left:'-240'},500);
     $(".sidenav_close").hide();
     $(".sidenav_open").show();
 });
