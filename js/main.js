@@ -56,3 +56,16 @@ $(".sidenav_close").click(function(){
     $(".sidenav_open").show();
 });
 
+
+$(function(){
+    var navHeight = $('.sidenav_inner').height();
+    var browserHeight = $(window).height();
+    console.log(navHeight);
+    console.log(browserHeight);
+
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > (navHeight - browserHeight)) $('.sidenav_inner').addClass('sidenav_fixed');
+        else $('.sidenav_inner').removeClass('sidenav_fixed');
+    })
+});
+

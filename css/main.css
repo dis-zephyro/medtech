@@ -281,10 +281,13 @@ body {
   min-height: 100%;
   position: absolute;
   background: #eeeeee;
-  padding-bottom: 50px;
   -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.sidenav .sidenav_inner {
+  width: 290px;
+  padding-bottom: 50px;
 }
 .sidenav .sidenav__title {
   height: 85px;
@@ -381,6 +384,11 @@ body {
 }
 .sidenav li li a:hover:before {
   display: none;
+}
+.sidenav .sidenav_fixed {
+  left: 0;
+  bottom: 0;
+  position: fixed;
 }
 .basket_line {
   height: 37px;

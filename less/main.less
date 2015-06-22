@@ -260,8 +260,12 @@ body {
 	min-height: 100%;
 	position: absolute;
 	background: #eeeeee;
-	padding-bottom: 50px;
 	.box-shadow(4px 0px 5px 0px rgba(0, 0, 0, 0.2));
+
+	.sidenav_inner {
+		width: 290px;
+		padding-bottom: 50px;
+	}
 
 	.sidenav__title {
 		height: 85px;
@@ -373,6 +377,13 @@ body {
 				}
 			}
 		}
+	}
+
+
+	.sidenav_fixed {
+		left: 0;
+		bottom: 0;
+		position: fixed;
 	}
 }
 
